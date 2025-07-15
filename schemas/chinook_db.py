@@ -1,0 +1,693 @@
+# Database schema for chinook.db
+# Generated automatically with sample data
+
+schema = {
+    "Album": {
+        "columns": [
+            {
+                "AlbumId": "INTEGER"
+            },
+            {
+                "Title": "NVARCHAR(160)"
+            },
+            {
+                "ArtistId": "INTEGER"
+            }
+        ],
+        "sample": [
+            {
+                "AlbumId": 1,
+                "Title": "For Those About To Rock We Salute You",
+                "ArtistId": 1
+            },
+            {
+                "AlbumId": 2,
+                "Title": "Balls to the Wall",
+                "ArtistId": 2
+            },
+            {
+                "AlbumId": 3,
+                "Title": "Restless and Wild",
+                "ArtistId": 2
+            },
+            {
+                "AlbumId": 4,
+                "Title": "Let There Be Rock",
+                "ArtistId": 1
+            },
+            {
+                "AlbumId": 5,
+                "Title": "Big Ones",
+                "ArtistId": 3
+            }
+        ]
+    },
+    "Artist": {
+        "columns": [
+            {
+                "ArtistId": "INTEGER"
+            },
+            {
+                "Name": "NVARCHAR(120)"
+            }
+        ],
+        "sample": [
+            {
+                "ArtistId": 1,
+                "Name": "AC/DC"
+            },
+            {
+                "ArtistId": 2,
+                "Name": "Accept"
+            },
+            {
+                "ArtistId": 3,
+                "Name": "Aerosmith"
+            },
+            {
+                "ArtistId": 4,
+                "Name": "Alanis Morissette"
+            },
+            {
+                "ArtistId": 5,
+                "Name": "Alice In Chains"
+            }
+        ]
+    },
+    "Customer": {
+        "columns": [
+            {
+                "CustomerId": "INTEGER"
+            },
+            {
+                "FirstName": "NVARCHAR(40)"
+            },
+            {
+                "LastName": "NVARCHAR(20)"
+            },
+            {
+                "Company": "NVARCHAR(80)"
+            },
+            {
+                "Address": "NVARCHAR(70)"
+            },
+            {
+                "City": "NVARCHAR(40)"
+            },
+            {
+                "State": "NVARCHAR(40)"
+            },
+            {
+                "Country": "NVARCHAR(40)"
+            },
+            {
+                "PostalCode": "NVARCHAR(10)"
+            },
+            {
+                "Phone": "NVARCHAR(24)"
+            },
+            {
+                "Fax": "NVARCHAR(24)"
+            },
+            {
+                "Email": "NVARCHAR(60)"
+            },
+            {
+                "SupportRepId": "INTEGER"
+            }
+        ],
+        "sample": [
+            {
+                "CustomerId": 1,
+                "FirstName": "Lu\u00eds",
+                "LastName": "Gon\u00e7alves",
+                "Company": "Embraer - Empresa Brasileira de Aeron\u00e1utica S.A.",
+                "Address": "Av. Brigadeiro Faria Lima, 2170",
+                "City": "S\u00e3o Jos\u00e9 dos Campos",
+                "State": "SP",
+                "Country": "Brazil",
+                "PostalCode": "12227-000",
+                "Phone": "+55 (12) 3923-5555",
+                "Fax": "+55 (12) 3923-5566",
+                "Email": "luisg@embraer.com.br",
+                "SupportRepId": 3
+            },
+            {
+                "CustomerId": 10,
+                "FirstName": "Eduardo",
+                "LastName": "Martins",
+                "Company": "Woodstock Discos",
+                "Address": "Rua Dr. Falc\u00e3o Filho, 155",
+                "City": "S\u00e3o Paulo",
+                "State": "SP",
+                "Country": "Brazil",
+                "PostalCode": "01007-010",
+                "Phone": "+55 (11) 3033-5446",
+                "Fax": "+55 (11) 3033-4564",
+                "Email": "eduardo@woodstock.com.br",
+                "SupportRepId": 4
+            },
+            {
+                "CustomerId": 11,
+                "FirstName": "Alexandre",
+                "LastName": "Rocha",
+                "Company": "Banco do Brasil S.A.",
+                "Address": "Av. Paulista, 2022",
+                "City": "S\u00e3o Paulo",
+                "State": "SP",
+                "Country": "Brazil",
+                "PostalCode": "01310-200",
+                "Phone": "+55 (11) 3055-3278",
+                "Fax": "+55 (11) 3055-8131",
+                "Email": "alero@uol.com.br",
+                "SupportRepId": 5
+            },
+            {
+                "CustomerId": 12,
+                "FirstName": "Roberto",
+                "LastName": "Almeida",
+                "Company": "Riotur",
+                "Address": "Pra\u00e7a Pio X, 119",
+                "City": "Rio de Janeiro",
+                "State": "RJ",
+                "Country": "Brazil",
+                "PostalCode": "20040-020",
+                "Phone": "+55 (21) 2271-7000",
+                "Fax": "+55 (21) 2271-7070",
+                "Email": "roberto.almeida@riotur.gov.br",
+                "SupportRepId": 3
+            },
+            {
+                "CustomerId": 14,
+                "FirstName": "Mark",
+                "LastName": "Philips",
+                "Company": "Telus",
+                "Address": "8210 111 ST NW",
+                "City": "Edmonton",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T6G 2C7",
+                "Phone": "+1 (780) 434-4554",
+                "Fax": "+1 (780) 434-5565",
+                "Email": "mphilips12@shaw.ca",
+                "SupportRepId": 5
+            }
+        ]
+    },
+    "Employee": {
+        "columns": [
+            {
+                "EmployeeId": "INTEGER"
+            },
+            {
+                "LastName": "NVARCHAR(20)"
+            },
+            {
+                "FirstName": "NVARCHAR(20)"
+            },
+            {
+                "Title": "NVARCHAR(30)"
+            },
+            {
+                "ReportsTo": "INTEGER"
+            },
+            {
+                "BirthDate": "DATETIME"
+            },
+            {
+                "HireDate": "DATETIME"
+            },
+            {
+                "Address": "NVARCHAR(70)"
+            },
+            {
+                "City": "NVARCHAR(40)"
+            },
+            {
+                "State": "NVARCHAR(40)"
+            },
+            {
+                "Country": "NVARCHAR(40)"
+            },
+            {
+                "PostalCode": "NVARCHAR(10)"
+            },
+            {
+                "Phone": "NVARCHAR(24)"
+            },
+            {
+                "Fax": "NVARCHAR(24)"
+            },
+            {
+                "Email": "NVARCHAR(60)"
+            }
+        ],
+        "sample": [
+            {
+                "EmployeeId": 2,
+                "LastName": "Edwards",
+                "FirstName": "Nancy",
+                "Title": "Sales Manager",
+                "ReportsTo": 1,
+                "BirthDate": "1958-12-08 00:00:00",
+                "HireDate": "2002-05-01 00:00:00",
+                "Address": "825 8 Ave SW",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T2P 2T3",
+                "Phone": "+1 (403) 262-3443",
+                "Fax": "+1 (403) 262-3322",
+                "Email": "nancy@chinookcorp.com"
+            },
+            {
+                "EmployeeId": 3,
+                "LastName": "Peacock",
+                "FirstName": "Jane",
+                "Title": "Sales Support Agent",
+                "ReportsTo": 2,
+                "BirthDate": "1973-08-29 00:00:00",
+                "HireDate": "2002-04-01 00:00:00",
+                "Address": "1111 6 Ave SW",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T2P 5M5",
+                "Phone": "+1 (403) 262-3443",
+                "Fax": "+1 (403) 262-6712",
+                "Email": "jane@chinookcorp.com"
+            },
+            {
+                "EmployeeId": 4,
+                "LastName": "Park",
+                "FirstName": "Margaret",
+                "Title": "Sales Support Agent",
+                "ReportsTo": 2,
+                "BirthDate": "1947-09-19 00:00:00",
+                "HireDate": "2003-05-03 00:00:00",
+                "Address": "683 10 Street SW",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T2P 5G3",
+                "Phone": "+1 (403) 263-4423",
+                "Fax": "+1 (403) 263-4289",
+                "Email": "margaret@chinookcorp.com"
+            },
+            {
+                "EmployeeId": 5,
+                "LastName": "Johnson",
+                "FirstName": "Steve",
+                "Title": "Sales Support Agent",
+                "ReportsTo": 2,
+                "BirthDate": "1965-03-03 00:00:00",
+                "HireDate": "2003-10-17 00:00:00",
+                "Address": "7727B 41 Ave",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T3B 1Y7",
+                "Phone": "1 (780) 836-9987",
+                "Fax": "1 (780) 836-9543",
+                "Email": "steve@chinookcorp.com"
+            },
+            {
+                "EmployeeId": 6,
+                "LastName": "Mitchell",
+                "FirstName": "Michael",
+                "Title": "IT Manager",
+                "ReportsTo": 1,
+                "BirthDate": "1973-07-01 00:00:00",
+                "HireDate": "2003-10-17 00:00:00",
+                "Address": "5827 Bowness Road NW",
+                "City": "Calgary",
+                "State": "AB",
+                "Country": "Canada",
+                "PostalCode": "T3B 0C5",
+                "Phone": "+1 (403) 246-9887",
+                "Fax": "+1 (403) 246-9899",
+                "Email": "michael@chinookcorp.com"
+            }
+        ]
+    },
+    "Genre": {
+        "columns": [
+            {
+                "GenreId": "INTEGER"
+            },
+            {
+                "Name": "NVARCHAR(120)"
+            }
+        ],
+        "sample": [
+            {
+                "GenreId": 1,
+                "Name": "Rock"
+            },
+            {
+                "GenreId": 2,
+                "Name": "Jazz"
+            },
+            {
+                "GenreId": 3,
+                "Name": "Metal"
+            },
+            {
+                "GenreId": 4,
+                "Name": "Alternative & Punk"
+            },
+            {
+                "GenreId": 5,
+                "Name": "Rock And Roll"
+            }
+        ]
+    },
+    "Invoice": {
+        "columns": [
+            {
+                "InvoiceId": "INTEGER"
+            },
+            {
+                "CustomerId": "INTEGER"
+            },
+            {
+                "InvoiceDate": "DATETIME"
+            },
+            {
+                "BillingAddress": "NVARCHAR(70)"
+            },
+            {
+                "BillingCity": "NVARCHAR(40)"
+            },
+            {
+                "BillingState": "NVARCHAR(40)"
+            },
+            {
+                "BillingCountry": "NVARCHAR(40)"
+            },
+            {
+                "BillingPostalCode": "NVARCHAR(10)"
+            },
+            {
+                "Total": "NUMERIC(10, 2)"
+            }
+        ],
+        "sample": [
+            {
+                "InvoiceId": 4,
+                "CustomerId": 14,
+                "InvoiceDate": "2021-01-06 00:00:00",
+                "BillingAddress": "8210 111 ST NW",
+                "BillingCity": "Edmonton",
+                "BillingState": "AB",
+                "BillingCountry": "Canada",
+                "BillingPostalCode": "T6G 2C7",
+                "Total": 8.91
+            },
+            {
+                "InvoiceId": 5,
+                "CustomerId": 23,
+                "InvoiceDate": "2021-01-11 00:00:00",
+                "BillingAddress": "69 Salem Street",
+                "BillingCity": "Boston",
+                "BillingState": "MA",
+                "BillingCountry": "USA",
+                "BillingPostalCode": "2113",
+                "Total": 13.86
+            },
+            {
+                "InvoiceId": 13,
+                "CustomerId": 16,
+                "InvoiceDate": "2021-02-19 00:00:00",
+                "BillingAddress": "1600 Amphitheatre Parkway",
+                "BillingCity": "Mountain View",
+                "BillingState": "CA",
+                "BillingCountry": "USA",
+                "BillingPostalCode": "94043-1351",
+                "Total": 0.99
+            },
+            {
+                "InvoiceId": 14,
+                "CustomerId": 17,
+                "InvoiceDate": "2021-03-04 00:00:00",
+                "BillingAddress": "1 Microsoft Way",
+                "BillingCity": "Redmond",
+                "BillingState": "WA",
+                "BillingCountry": "USA",
+                "BillingPostalCode": "98052-8300",
+                "Total": 1.98
+            },
+            {
+                "InvoiceId": 15,
+                "CustomerId": 19,
+                "InvoiceDate": "2021-03-04 00:00:00",
+                "BillingAddress": "1 Infinite Loop",
+                "BillingCity": "Cupertino",
+                "BillingState": "CA",
+                "BillingCountry": "USA",
+                "BillingPostalCode": "95014",
+                "Total": 1.98
+            }
+        ]
+    },
+    "InvoiceLine": {
+        "columns": [
+            {
+                "InvoiceLineId": "INTEGER"
+            },
+            {
+                "InvoiceId": "INTEGER"
+            },
+            {
+                "TrackId": "INTEGER"
+            },
+            {
+                "UnitPrice": "NUMERIC(10, 2)"
+            },
+            {
+                "Quantity": "INTEGER"
+            }
+        ],
+        "sample": [
+            {
+                "InvoiceLineId": 1,
+                "InvoiceId": 1,
+                "TrackId": 2,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            },
+            {
+                "InvoiceLineId": 2,
+                "InvoiceId": 1,
+                "TrackId": 4,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            },
+            {
+                "InvoiceLineId": 3,
+                "InvoiceId": 2,
+                "TrackId": 6,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            },
+            {
+                "InvoiceLineId": 4,
+                "InvoiceId": 2,
+                "TrackId": 8,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            },
+            {
+                "InvoiceLineId": 5,
+                "InvoiceId": 2,
+                "TrackId": 10,
+                "UnitPrice": 0.99,
+                "Quantity": 1
+            }
+        ]
+    },
+    "MediaType": {
+        "columns": [
+            {
+                "MediaTypeId": "INTEGER"
+            },
+            {
+                "Name": "NVARCHAR(120)"
+            }
+        ],
+        "sample": [
+            {
+                "MediaTypeId": 1,
+                "Name": "MPEG audio file"
+            },
+            {
+                "MediaTypeId": 2,
+                "Name": "Protected AAC audio file"
+            },
+            {
+                "MediaTypeId": 3,
+                "Name": "Protected MPEG-4 video file"
+            },
+            {
+                "MediaTypeId": 4,
+                "Name": "Purchased AAC audio file"
+            },
+            {
+                "MediaTypeId": 5,
+                "Name": "AAC audio file"
+            }
+        ]
+    },
+    "Playlist": {
+        "columns": [
+            {
+                "PlaylistId": "INTEGER"
+            },
+            {
+                "Name": "NVARCHAR(120)"
+            }
+        ],
+        "sample": [
+            {
+                "PlaylistId": 1,
+                "Name": "Music"
+            },
+            {
+                "PlaylistId": 2,
+                "Name": "Movies"
+            },
+            {
+                "PlaylistId": 3,
+                "Name": "TV Shows"
+            },
+            {
+                "PlaylistId": 4,
+                "Name": "Audiobooks"
+            },
+            {
+                "PlaylistId": 5,
+                "Name": "90\u2019s Music"
+            }
+        ]
+    },
+    "PlaylistTrack": {
+        "columns": [
+            {
+                "PlaylistId": "INTEGER"
+            },
+            {
+                "TrackId": "INTEGER"
+            }
+        ],
+        "sample": [
+            {
+                "PlaylistId": 1,
+                "TrackId": 3402
+            },
+            {
+                "PlaylistId": 1,
+                "TrackId": 3389
+            },
+            {
+                "PlaylistId": 1,
+                "TrackId": 3390
+            },
+            {
+                "PlaylistId": 1,
+                "TrackId": 3391
+            },
+            {
+                "PlaylistId": 1,
+                "TrackId": 3392
+            }
+        ]
+    },
+    "Track": {
+        "columns": [
+            {
+                "TrackId": "INTEGER"
+            },
+            {
+                "Name": "NVARCHAR(200)"
+            },
+            {
+                "AlbumId": "INTEGER"
+            },
+            {
+                "MediaTypeId": "INTEGER"
+            },
+            {
+                "GenreId": "INTEGER"
+            },
+            {
+                "Composer": "NVARCHAR(220)"
+            },
+            {
+                "Milliseconds": "INTEGER"
+            },
+            {
+                "Bytes": "INTEGER"
+            },
+            {
+                "UnitPrice": "NUMERIC(10, 2)"
+            }
+        ],
+        "sample": [
+            {
+                "TrackId": 1,
+                "Name": "For Those About To Rock (We Salute You)",
+                "AlbumId": 1,
+                "MediaTypeId": 1,
+                "GenreId": 1,
+                "Composer": "Angus Young, Malcolm Young, Brian Johnson",
+                "Milliseconds": 343719,
+                "Bytes": 11170334,
+                "UnitPrice": 0.99
+            },
+            {
+                "TrackId": 2,
+                "Name": "Balls to the Wall",
+                "AlbumId": 2,
+                "MediaTypeId": 2,
+                "GenreId": 1,
+                "Composer": "U. Dirkschneider, W. Hoffmann, H. Frank, P. Baltes, S. Kaufmann, G. Hoffmann",
+                "Milliseconds": 342562,
+                "Bytes": 5510424,
+                "UnitPrice": 0.99
+            },
+            {
+                "TrackId": 3,
+                "Name": "Fast As a Shark",
+                "AlbumId": 3,
+                "MediaTypeId": 2,
+                "GenreId": 1,
+                "Composer": "F. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman",
+                "Milliseconds": 230619,
+                "Bytes": 3990994,
+                "UnitPrice": 0.99
+            },
+            {
+                "TrackId": 4,
+                "Name": "Restless and Wild",
+                "AlbumId": 3,
+                "MediaTypeId": 2,
+                "GenreId": 1,
+                "Composer": "F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. Dirkscneider & W. Hoffman",
+                "Milliseconds": 252051,
+                "Bytes": 4331779,
+                "UnitPrice": 0.99
+            },
+            {
+                "TrackId": 5,
+                "Name": "Princess of the Dawn",
+                "AlbumId": 3,
+                "MediaTypeId": 2,
+                "GenreId": 1,
+                "Composer": "Deaffy & R.A. Smith-Diesel",
+                "Milliseconds": 375418,
+                "Bytes": 6290521,
+                "UnitPrice": 0.99
+            }
+        ]
+    }
+}
