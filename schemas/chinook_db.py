@@ -32,7 +32,7 @@ schema = {
                 "ArtistId": 3,
             },
         ],
-        "description": "This table stores and manages Album related data with associated metadata and relationships.",
+        "description": "This table stores album records, capturing each album's unique identifier, title, and the associated artist. It is used to organize and manage the catalog of musical albums and their relationships to artists within the application.",
     },
     "Artist": {
         "columns": {
@@ -61,7 +61,7 @@ schema = {
                 "Name": "Alice In Chains",
             },
         ],
-        "description": "This table stores and manages Artist related data with associated metadata and relationships.",
+        "description": "This table stores information about artists, capturing each artist's unique identifier and name. It is typically used to manage and reference artists within collections such as albums, tracks, or other media in the application.",
     },
     "Customer": {
         "columns": {
@@ -156,7 +156,7 @@ schema = {
                 "SupportRepId": 5,
             },
         ],
-        "description": "This table stores and manages Customer related data with associated metadata and relationships.",
+        "description": "This table contains detailed records of customers, including personal and business contact information such as names, company, address, phone numbers, and emails, along with an assigned support representative. It is used to manage customer profiles and relationships, enabling effective communication and support within the organization.",
     },
     "Employee": {
         "columns": {
@@ -263,7 +263,7 @@ schema = {
                 "Email": "michael@chinookcorp.com",
             },
         ],
-        "description": "This table stores and manages Employee related data with associated metadata and relationships.",
+        "description": "This table contains records of employees, capturing personal information such as names and contact details, job titles, reporting relationships, and key employment dates like birth and hire dates. It is used to manage organizational structure, employee profiles, and human resources operations within the business.",
     },
     "Genre": {
         "columns": {
@@ -292,7 +292,7 @@ schema = {
                 "Name": "Rock And Roll",
             },
         ],
-        "description": "This table stores and manages Genre related data with associated metadata and relationships.",
+        "description": "This table defines the genres available within the system, associating each unique genre identifier with a descriptive name. It supports the classification and organization of content—such as music tracks or media listings—by genre for easier discovery and management.",
     },
     "Invoice": {
         "columns": {
@@ -363,7 +363,7 @@ schema = {
                 "Total": 1.98,
             },
         ],
-        "description": "This table stores and manages Invoice related data with associated metadata and relationships.",
+        "description": "This table stores invoice records, capturing key information such as the associated customer, invoice date, detailed billing address, and total amount billed. It supports financial operations by providing a comprehensive record of sales transactions and customer billing for the business.",
     },
     "InvoiceLine": {
         "columns": {
@@ -410,7 +410,7 @@ schema = {
                 "Quantity": 1,
             },
         ],
-        "description": "This table stores and manages InvoiceLine related data with associated metadata and relationships.",
+        "description": "This table records individual items included in each invoice, specifying the track purchased, its unit price, and quantity per line item. It supports detailed breakdowns of sales transactions by linking invoices to the specific tracks sold, enabling accurate billing and sales analysis.",
     },
     "MediaType": {
         "columns": {
@@ -439,7 +439,7 @@ schema = {
                 "Name": "AAC audio file",
             },
         ],
-        "description": "This table stores and manages MediaType related data with associated metadata and relationships.",
+        "description": "This table defines the available media types within the system, storing unique identifiers and descriptive names for each type. It is typically used to categorize and manage different formats or genres of media content in applications such as music libraries or digital asset platforms.",
     },
     "Playlist": {
         "columns": {
@@ -468,7 +468,7 @@ schema = {
                 "Name": "90’s Music",
             },
         ],
-        "description": "This table stores and manages Playlist related data with associated metadata and relationships.",
+        "description": "This table stores information about music playlists, including a unique playlist identifier and the playlist's name. It is used to manage and organize different collections of tracks within the application, supporting user or system-generated playlist functionality.",
     },
     "PlaylistTrack": {
         "columns": {
@@ -497,7 +497,7 @@ schema = {
                 "TrackId": 3392,
             },
         ],
-        "description": "This table stores and manages PlaylistTrack related data with associated metadata and relationships.",
+        "description": "This table records the association between playlists and tracks, linking each track to the playlists it belongs to. It supports the organization and management of music collections by enabling the construction of playlists from individual tracks within a music application.",
     },
     "Track": {
         "columns": {
@@ -568,6 +568,6 @@ schema = {
                 "UnitPrice": 0.99,
             },
         ],
-        "description": "This table stores and manages Track related data with associated metadata and relationships.",
+        "description": "This table holds detailed information about individual music tracks, including their titles, associated album, media type, genre, composer, duration, file size, and unit price. It serves as a central repository for cataloging and managing music inventory, supporting media libraries, sales transactions, and music discovery features within the application.",
     },
 }

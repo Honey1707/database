@@ -68,7 +68,7 @@ schema = {
                 "modified_date": "2024-01-01 05:30:00",
             },
         ],
-        "description": "This table stores and manages movie related data with associated metadata and relationships.",
+        "description": "This table contains records of movies, storing key details such as unique identifiers, original and localized titles, runtime, release and localization information, global availability, and audit dates. It supports the management and cataloging of movies for content distribution and discovery across different regions.",
     },
     "season": {
         "columns": {
@@ -139,7 +139,7 @@ schema = {
                 "modified_date": "2024-01-01 05:30:00",
             },
         ],
-        "description": "This table stores and manages season related data with associated metadata and relationships.",
+        "description": "This table stores information about individual television show seasons, including their season numbers, associated show identifiers, original and localized titles, runtime durations, and key release and modification dates. It supports content management and cataloging by linking each season to its parent TV show and tracking relevant metadata for media distribution platforms.",
     },
     "tv_show": {
         "columns": {
@@ -204,7 +204,7 @@ schema = {
                 "modified_date": "2024-01-01 05:30:00",
             },
         ],
-        "description": "This table stores and manages tv_show related data with associated metadata and relationships.",
+        "description": "This table stores information about TV shows, including their original and localized titles, release dates, global availability status, and associated metadata such as creation and modification timestamps. It is used to manage and present TV show listings for audiences across different regions and locales within the platform.",
     },
     "view_summary": {
         "columns": {
@@ -293,6 +293,6 @@ schema = {
                 "modified_date": "2024-01-01 05:30:00",
             },
         ],
-        "description": "This table stores and manages view_summary related data with associated metadata and relationships.",
+        "description": "This table tracks aggregated viewing performance metrics for movies and TV show seasons, such as cumulative weeks in the top 10, total hours viewed, overall view counts, and viewing rank within specified date ranges. It associates each summary with either a movie or season and provides timeframes and audit timestamps, supporting analytics and reporting on content popularity and engagement trends.",
     },
 }
