@@ -1,151 +1,114 @@
-# Database schema for chinook.db
-# Generated automatically with sample data
-
 schema = {
     "Album": {
-        "columns": [
-            {
-                "AlbumId": "INTEGER"
-            },
-            {
-                "Title": "NVARCHAR(160)"
-            },
-            {
-                "ArtistId": "INTEGER"
-            }
-        ],
+        "columns": {
+            "AlbumId": "INTEGER",
+            "Title": "NVARCHAR(160)",
+            "ArtistId": "INTEGER",
+        },
         "sample": [
             {
                 "AlbumId": 1,
                 "Title": "For Those About To Rock We Salute You",
-                "ArtistId": 1
+                "ArtistId": 1,
             },
             {
                 "AlbumId": 2,
                 "Title": "Balls to the Wall",
-                "ArtistId": 2
+                "ArtistId": 2,
             },
             {
                 "AlbumId": 3,
                 "Title": "Restless and Wild",
-                "ArtistId": 2
+                "ArtistId": 2,
             },
             {
                 "AlbumId": 4,
                 "Title": "Let There Be Rock",
-                "ArtistId": 1
+                "ArtistId": 1,
             },
             {
                 "AlbumId": 5,
                 "Title": "Big Ones",
-                "ArtistId": 3
-            }
-        ]
+                "ArtistId": 3,
+            },
+        ],
+        "description": "This table stores and manages Album related data with associated metadata and relationships.",
     },
     "Artist": {
-        "columns": [
-            {
-                "ArtistId": "INTEGER"
-            },
-            {
-                "Name": "NVARCHAR(120)"
-            }
-        ],
+        "columns": {
+            "ArtistId": "INTEGER",
+            "Name": "NVARCHAR(120)",
+        },
         "sample": [
             {
                 "ArtistId": 1,
-                "Name": "AC/DC"
+                "Name": "AC/DC",
             },
             {
                 "ArtistId": 2,
-                "Name": "Accept"
+                "Name": "Accept",
             },
             {
                 "ArtistId": 3,
-                "Name": "Aerosmith"
+                "Name": "Aerosmith",
             },
             {
                 "ArtistId": 4,
-                "Name": "Alanis Morissette"
+                "Name": "Alanis Morissette",
             },
             {
                 "ArtistId": 5,
-                "Name": "Alice In Chains"
-            }
-        ]
+                "Name": "Alice In Chains",
+            },
+        ],
+        "description": "This table stores and manages Artist related data with associated metadata and relationships.",
     },
     "Customer": {
-        "columns": [
-            {
-                "CustomerId": "INTEGER"
-            },
-            {
-                "FirstName": "NVARCHAR(40)"
-            },
-            {
-                "LastName": "NVARCHAR(20)"
-            },
-            {
-                "Company": "NVARCHAR(80)"
-            },
-            {
-                "Address": "NVARCHAR(70)"
-            },
-            {
-                "City": "NVARCHAR(40)"
-            },
-            {
-                "State": "NVARCHAR(40)"
-            },
-            {
-                "Country": "NVARCHAR(40)"
-            },
-            {
-                "PostalCode": "NVARCHAR(10)"
-            },
-            {
-                "Phone": "NVARCHAR(24)"
-            },
-            {
-                "Fax": "NVARCHAR(24)"
-            },
-            {
-                "Email": "NVARCHAR(60)"
-            },
-            {
-                "SupportRepId": "INTEGER"
-            }
-        ],
+        "columns": {
+            "CustomerId": "INTEGER",
+            "FirstName": "NVARCHAR(40)",
+            "LastName": "NVARCHAR(20)",
+            "Company": "NVARCHAR(80)",
+            "Address": "NVARCHAR(70)",
+            "City": "NVARCHAR(40)",
+            "State": "NVARCHAR(40)",
+            "Country": "NVARCHAR(40)",
+            "PostalCode": "NVARCHAR(10)",
+            "Phone": "NVARCHAR(24)",
+            "Fax": "NVARCHAR(24)",
+            "Email": "NVARCHAR(60)",
+            "SupportRepId": "INTEGER",
+        },
         "sample": [
             {
                 "CustomerId": 1,
-                "FirstName": "Lu\u00eds",
-                "LastName": "Gon\u00e7alves",
-                "Company": "Embraer - Empresa Brasileira de Aeron\u00e1utica S.A.",
+                "FirstName": "Luís",
+                "LastName": "Gonçalves",
+                "Company": "Embraer - Empresa Brasileira de Aeronáutica S.A.",
                 "Address": "Av. Brigadeiro Faria Lima, 2170",
-                "City": "S\u00e3o Jos\u00e9 dos Campos",
+                "City": "São José dos Campos",
                 "State": "SP",
                 "Country": "Brazil",
                 "PostalCode": "12227-000",
                 "Phone": "+55 (12) 3923-5555",
                 "Fax": "+55 (12) 3923-5566",
                 "Email": "luisg@embraer.com.br",
-                "SupportRepId": 3
+                "SupportRepId": 3,
             },
             {
                 "CustomerId": 10,
                 "FirstName": "Eduardo",
                 "LastName": "Martins",
                 "Company": "Woodstock Discos",
-                "Address": "Rua Dr. Falc\u00e3o Filho, 155",
-                "City": "S\u00e3o Paulo",
+                "Address": "Rua Dr. Falcão Filho, 155",
+                "City": "São Paulo",
                 "State": "SP",
                 "Country": "Brazil",
                 "PostalCode": "01007-010",
                 "Phone": "+55 (11) 3033-5446",
                 "Fax": "+55 (11) 3033-4564",
                 "Email": "eduardo@woodstock.com.br",
-                "SupportRepId": 4
+                "SupportRepId": 4,
             },
             {
                 "CustomerId": 11,
@@ -153,21 +116,21 @@ schema = {
                 "LastName": "Rocha",
                 "Company": "Banco do Brasil S.A.",
                 "Address": "Av. Paulista, 2022",
-                "City": "S\u00e3o Paulo",
+                "City": "São Paulo",
                 "State": "SP",
                 "Country": "Brazil",
                 "PostalCode": "01310-200",
                 "Phone": "+55 (11) 3055-3278",
                 "Fax": "+55 (11) 3055-8131",
                 "Email": "alero@uol.com.br",
-                "SupportRepId": 5
+                "SupportRepId": 5,
             },
             {
                 "CustomerId": 12,
                 "FirstName": "Roberto",
                 "LastName": "Almeida",
                 "Company": "Riotur",
-                "Address": "Pra\u00e7a Pio X, 119",
+                "Address": "Praça Pio X, 119",
                 "City": "Rio de Janeiro",
                 "State": "RJ",
                 "Country": "Brazil",
@@ -175,7 +138,7 @@ schema = {
                 "Phone": "+55 (21) 2271-7000",
                 "Fax": "+55 (21) 2271-7070",
                 "Email": "roberto.almeida@riotur.gov.br",
-                "SupportRepId": 3
+                "SupportRepId": 3,
             },
             {
                 "CustomerId": 14,
@@ -190,58 +153,29 @@ schema = {
                 "Phone": "+1 (780) 434-4554",
                 "Fax": "+1 (780) 434-5565",
                 "Email": "mphilips12@shaw.ca",
-                "SupportRepId": 5
-            }
-        ]
+                "SupportRepId": 5,
+            },
+        ],
+        "description": "This table stores and manages Customer related data with associated metadata and relationships.",
     },
     "Employee": {
-        "columns": [
-            {
-                "EmployeeId": "INTEGER"
-            },
-            {
-                "LastName": "NVARCHAR(20)"
-            },
-            {
-                "FirstName": "NVARCHAR(20)"
-            },
-            {
-                "Title": "NVARCHAR(30)"
-            },
-            {
-                "ReportsTo": "INTEGER"
-            },
-            {
-                "BirthDate": "DATETIME"
-            },
-            {
-                "HireDate": "DATETIME"
-            },
-            {
-                "Address": "NVARCHAR(70)"
-            },
-            {
-                "City": "NVARCHAR(40)"
-            },
-            {
-                "State": "NVARCHAR(40)"
-            },
-            {
-                "Country": "NVARCHAR(40)"
-            },
-            {
-                "PostalCode": "NVARCHAR(10)"
-            },
-            {
-                "Phone": "NVARCHAR(24)"
-            },
-            {
-                "Fax": "NVARCHAR(24)"
-            },
-            {
-                "Email": "NVARCHAR(60)"
-            }
-        ],
+        "columns": {
+            "EmployeeId": "INTEGER",
+            "LastName": "NVARCHAR(20)",
+            "FirstName": "NVARCHAR(20)",
+            "Title": "NVARCHAR(30)",
+            "ReportsTo": "INTEGER",
+            "BirthDate": "DATETIME",
+            "HireDate": "DATETIME",
+            "Address": "NVARCHAR(70)",
+            "City": "NVARCHAR(40)",
+            "State": "NVARCHAR(40)",
+            "Country": "NVARCHAR(40)",
+            "PostalCode": "NVARCHAR(10)",
+            "Phone": "NVARCHAR(24)",
+            "Fax": "NVARCHAR(24)",
+            "Email": "NVARCHAR(60)",
+        },
         "sample": [
             {
                 "EmployeeId": 2,
@@ -258,7 +192,7 @@ schema = {
                 "PostalCode": "T2P 2T3",
                 "Phone": "+1 (403) 262-3443",
                 "Fax": "+1 (403) 262-3322",
-                "Email": "nancy@chinookcorp.com"
+                "Email": "nancy@chinookcorp.com",
             },
             {
                 "EmployeeId": 3,
@@ -275,7 +209,7 @@ schema = {
                 "PostalCode": "T2P 5M5",
                 "Phone": "+1 (403) 262-3443",
                 "Fax": "+1 (403) 262-6712",
-                "Email": "jane@chinookcorp.com"
+                "Email": "jane@chinookcorp.com",
             },
             {
                 "EmployeeId": 4,
@@ -292,7 +226,7 @@ schema = {
                 "PostalCode": "T2P 5G3",
                 "Phone": "+1 (403) 263-4423",
                 "Fax": "+1 (403) 263-4289",
-                "Email": "margaret@chinookcorp.com"
+                "Email": "margaret@chinookcorp.com",
             },
             {
                 "EmployeeId": 5,
@@ -309,7 +243,7 @@ schema = {
                 "PostalCode": "T3B 1Y7",
                 "Phone": "1 (780) 836-9987",
                 "Fax": "1 (780) 836-9543",
-                "Email": "steve@chinookcorp.com"
+                "Email": "steve@chinookcorp.com",
             },
             {
                 "EmployeeId": 6,
@@ -326,72 +260,52 @@ schema = {
                 "PostalCode": "T3B 0C5",
                 "Phone": "+1 (403) 246-9887",
                 "Fax": "+1 (403) 246-9899",
-                "Email": "michael@chinookcorp.com"
-            }
-        ]
+                "Email": "michael@chinookcorp.com",
+            },
+        ],
+        "description": "This table stores and manages Employee related data with associated metadata and relationships.",
     },
     "Genre": {
-        "columns": [
-            {
-                "GenreId": "INTEGER"
-            },
-            {
-                "Name": "NVARCHAR(120)"
-            }
-        ],
+        "columns": {
+            "GenreId": "INTEGER",
+            "Name": "NVARCHAR(120)",
+        },
         "sample": [
             {
                 "GenreId": 1,
-                "Name": "Rock"
+                "Name": "Rock",
             },
             {
                 "GenreId": 2,
-                "Name": "Jazz"
+                "Name": "Jazz",
             },
             {
                 "GenreId": 3,
-                "Name": "Metal"
+                "Name": "Metal",
             },
             {
                 "GenreId": 4,
-                "Name": "Alternative & Punk"
+                "Name": "Alternative & Punk",
             },
             {
                 "GenreId": 5,
-                "Name": "Rock And Roll"
-            }
-        ]
+                "Name": "Rock And Roll",
+            },
+        ],
+        "description": "This table stores and manages Genre related data with associated metadata and relationships.",
     },
     "Invoice": {
-        "columns": [
-            {
-                "InvoiceId": "INTEGER"
-            },
-            {
-                "CustomerId": "INTEGER"
-            },
-            {
-                "InvoiceDate": "DATETIME"
-            },
-            {
-                "BillingAddress": "NVARCHAR(70)"
-            },
-            {
-                "BillingCity": "NVARCHAR(40)"
-            },
-            {
-                "BillingState": "NVARCHAR(40)"
-            },
-            {
-                "BillingCountry": "NVARCHAR(40)"
-            },
-            {
-                "BillingPostalCode": "NVARCHAR(10)"
-            },
-            {
-                "Total": "NUMERIC(10, 2)"
-            }
-        ],
+        "columns": {
+            "InvoiceId": "INTEGER",
+            "CustomerId": "INTEGER",
+            "InvoiceDate": "DATETIME",
+            "BillingAddress": "NVARCHAR(70)",
+            "BillingCity": "NVARCHAR(40)",
+            "BillingState": "NVARCHAR(40)",
+            "BillingCountry": "NVARCHAR(40)",
+            "BillingPostalCode": "NVARCHAR(10)",
+            "Total": "NUMERIC(10, 2)",
+        },
         "sample": [
             {
                 "InvoiceId": 4,
@@ -402,7 +316,7 @@ schema = {
                 "BillingState": "AB",
                 "BillingCountry": "Canada",
                 "BillingPostalCode": "T6G 2C7",
-                "Total": 8.91
+                "Total": 8.91,
             },
             {
                 "InvoiceId": 5,
@@ -413,7 +327,7 @@ schema = {
                 "BillingState": "MA",
                 "BillingCountry": "USA",
                 "BillingPostalCode": "2113",
-                "Total": 13.86
+                "Total": 13.86,
             },
             {
                 "InvoiceId": 13,
@@ -424,7 +338,7 @@ schema = {
                 "BillingState": "CA",
                 "BillingCountry": "USA",
                 "BillingPostalCode": "94043-1351",
-                "Total": 0.99
+                "Total": 0.99,
             },
             {
                 "InvoiceId": 14,
@@ -435,7 +349,7 @@ schema = {
                 "BillingState": "WA",
                 "BillingCountry": "USA",
                 "BillingPostalCode": "98052-8300",
-                "Total": 1.98
+                "Total": 1.98,
             },
             {
                 "InvoiceId": 15,
@@ -446,192 +360,157 @@ schema = {
                 "BillingState": "CA",
                 "BillingCountry": "USA",
                 "BillingPostalCode": "95014",
-                "Total": 1.98
-            }
-        ]
+                "Total": 1.98,
+            },
+        ],
+        "description": "This table stores and manages Invoice related data with associated metadata and relationships.",
     },
     "InvoiceLine": {
-        "columns": [
-            {
-                "InvoiceLineId": "INTEGER"
-            },
-            {
-                "InvoiceId": "INTEGER"
-            },
-            {
-                "TrackId": "INTEGER"
-            },
-            {
-                "UnitPrice": "NUMERIC(10, 2)"
-            },
-            {
-                "Quantity": "INTEGER"
-            }
-        ],
+        "columns": {
+            "InvoiceLineId": "INTEGER",
+            "InvoiceId": "INTEGER",
+            "TrackId": "INTEGER",
+            "UnitPrice": "NUMERIC(10, 2)",
+            "Quantity": "INTEGER",
+        },
         "sample": [
             {
                 "InvoiceLineId": 1,
                 "InvoiceId": 1,
                 "TrackId": 2,
                 "UnitPrice": 0.99,
-                "Quantity": 1
+                "Quantity": 1,
             },
             {
                 "InvoiceLineId": 2,
                 "InvoiceId": 1,
                 "TrackId": 4,
                 "UnitPrice": 0.99,
-                "Quantity": 1
+                "Quantity": 1,
             },
             {
                 "InvoiceLineId": 3,
                 "InvoiceId": 2,
                 "TrackId": 6,
                 "UnitPrice": 0.99,
-                "Quantity": 1
+                "Quantity": 1,
             },
             {
                 "InvoiceLineId": 4,
                 "InvoiceId": 2,
                 "TrackId": 8,
                 "UnitPrice": 0.99,
-                "Quantity": 1
+                "Quantity": 1,
             },
             {
                 "InvoiceLineId": 5,
                 "InvoiceId": 2,
                 "TrackId": 10,
                 "UnitPrice": 0.99,
-                "Quantity": 1
-            }
-        ]
+                "Quantity": 1,
+            },
+        ],
+        "description": "This table stores and manages InvoiceLine related data with associated metadata and relationships.",
     },
     "MediaType": {
-        "columns": [
-            {
-                "MediaTypeId": "INTEGER"
-            },
-            {
-                "Name": "NVARCHAR(120)"
-            }
-        ],
+        "columns": {
+            "MediaTypeId": "INTEGER",
+            "Name": "NVARCHAR(120)",
+        },
         "sample": [
             {
                 "MediaTypeId": 1,
-                "Name": "MPEG audio file"
+                "Name": "MPEG audio file",
             },
             {
                 "MediaTypeId": 2,
-                "Name": "Protected AAC audio file"
+                "Name": "Protected AAC audio file",
             },
             {
                 "MediaTypeId": 3,
-                "Name": "Protected MPEG-4 video file"
+                "Name": "Protected MPEG-4 video file",
             },
             {
                 "MediaTypeId": 4,
-                "Name": "Purchased AAC audio file"
+                "Name": "Purchased AAC audio file",
             },
             {
                 "MediaTypeId": 5,
-                "Name": "AAC audio file"
-            }
-        ]
+                "Name": "AAC audio file",
+            },
+        ],
+        "description": "This table stores and manages MediaType related data with associated metadata and relationships.",
     },
     "Playlist": {
-        "columns": [
-            {
-                "PlaylistId": "INTEGER"
-            },
-            {
-                "Name": "NVARCHAR(120)"
-            }
-        ],
+        "columns": {
+            "PlaylistId": "INTEGER",
+            "Name": "NVARCHAR(120)",
+        },
         "sample": [
             {
                 "PlaylistId": 1,
-                "Name": "Music"
+                "Name": "Music",
             },
             {
                 "PlaylistId": 2,
-                "Name": "Movies"
+                "Name": "Movies",
             },
             {
                 "PlaylistId": 3,
-                "Name": "TV Shows"
+                "Name": "TV Shows",
             },
             {
                 "PlaylistId": 4,
-                "Name": "Audiobooks"
+                "Name": "Audiobooks",
             },
             {
                 "PlaylistId": 5,
-                "Name": "90\u2019s Music"
-            }
-        ]
+                "Name": "90’s Music",
+            },
+        ],
+        "description": "This table stores and manages Playlist related data with associated metadata and relationships.",
     },
     "PlaylistTrack": {
-        "columns": [
-            {
-                "PlaylistId": "INTEGER"
-            },
-            {
-                "TrackId": "INTEGER"
-            }
-        ],
+        "columns": {
+            "PlaylistId": "INTEGER",
+            "TrackId": "INTEGER",
+        },
         "sample": [
             {
                 "PlaylistId": 1,
-                "TrackId": 3402
+                "TrackId": 3402,
             },
             {
                 "PlaylistId": 1,
-                "TrackId": 3389
+                "TrackId": 3389,
             },
             {
                 "PlaylistId": 1,
-                "TrackId": 3390
+                "TrackId": 3390,
             },
             {
                 "PlaylistId": 1,
-                "TrackId": 3391
+                "TrackId": 3391,
             },
             {
                 "PlaylistId": 1,
-                "TrackId": 3392
-            }
-        ]
+                "TrackId": 3392,
+            },
+        ],
+        "description": "This table stores and manages PlaylistTrack related data with associated metadata and relationships.",
     },
     "Track": {
-        "columns": [
-            {
-                "TrackId": "INTEGER"
-            },
-            {
-                "Name": "NVARCHAR(200)"
-            },
-            {
-                "AlbumId": "INTEGER"
-            },
-            {
-                "MediaTypeId": "INTEGER"
-            },
-            {
-                "GenreId": "INTEGER"
-            },
-            {
-                "Composer": "NVARCHAR(220)"
-            },
-            {
-                "Milliseconds": "INTEGER"
-            },
-            {
-                "Bytes": "INTEGER"
-            },
-            {
-                "UnitPrice": "NUMERIC(10, 2)"
-            }
-        ],
+        "columns": {
+            "TrackId": "INTEGER",
+            "Name": "NVARCHAR(200)",
+            "AlbumId": "INTEGER",
+            "MediaTypeId": "INTEGER",
+            "GenreId": "INTEGER",
+            "Composer": "NVARCHAR(220)",
+            "Milliseconds": "INTEGER",
+            "Bytes": "INTEGER",
+            "UnitPrice": "NUMERIC(10, 2)",
+        },
         "sample": [
             {
                 "TrackId": 1,
@@ -642,7 +521,7 @@ schema = {
                 "Composer": "Angus Young, Malcolm Young, Brian Johnson",
                 "Milliseconds": 343719,
                 "Bytes": 11170334,
-                "UnitPrice": 0.99
+                "UnitPrice": 0.99,
             },
             {
                 "TrackId": 2,
@@ -653,7 +532,7 @@ schema = {
                 "Composer": "U. Dirkschneider, W. Hoffmann, H. Frank, P. Baltes, S. Kaufmann, G. Hoffmann",
                 "Milliseconds": 342562,
                 "Bytes": 5510424,
-                "UnitPrice": 0.99
+                "UnitPrice": 0.99,
             },
             {
                 "TrackId": 3,
@@ -664,7 +543,7 @@ schema = {
                 "Composer": "F. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman",
                 "Milliseconds": 230619,
                 "Bytes": 3990994,
-                "UnitPrice": 0.99
+                "UnitPrice": 0.99,
             },
             {
                 "TrackId": 4,
@@ -675,7 +554,7 @@ schema = {
                 "Composer": "F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. Dirkscneider & W. Hoffman",
                 "Milliseconds": 252051,
                 "Bytes": 4331779,
-                "UnitPrice": 0.99
+                "UnitPrice": 0.99,
             },
             {
                 "TrackId": 5,
@@ -686,8 +565,9 @@ schema = {
                 "Composer": "Deaffy & R.A. Smith-Diesel",
                 "Milliseconds": 375418,
                 "Bytes": 6290521,
-                "UnitPrice": 0.99
-            }
-        ]
-    }
+                "UnitPrice": 0.99,
+            },
+        ],
+        "description": "This table stores and manages Track related data with associated metadata and relationships.",
+    },
 }
